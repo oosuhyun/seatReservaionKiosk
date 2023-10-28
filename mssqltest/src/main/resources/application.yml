@@ -1,0 +1,21 @@
+#jdbc.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+#
+#jdbc.url=jdbc:sqlserver://DESKTOP-0AULK9E\MSSQLSERVER:1433;database=sample
+##jdbc:sqlserver://DESKTOP-0AULK9E\MSSQLSERVER:1433;database=sample
+#jdbc.username=susoo
+#
+#jdbc.password=1234
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://sql16ssd-013.localnet.kr\MSSQLSERVER:1433;database=kevinsaemdb_lab93;encrypt=false
+    username: kevinsaemdb_lab93
+    password: Kevin95733@
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
